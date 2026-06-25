@@ -3,7 +3,15 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link rel="preload" as="image" href="./assets/hero-mockup-BVzVoaCy.jpg"/>
+  
+  <!-- Preconnect to Font Origins ASAP -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+
+  <!-- Responsive Preloads for LCP Hero Image -->
+  <link rel="preload" as="image" href="./assets/hero-mockup-640.webp" media="(max-width: 640px)"/>
+  <link rel="preload" as="image" href="./assets/hero-mockup-1000.webp" media="(min-width: 641px)"/>
+
   <link rel="stylesheet" href="./assets/styles-DFp03DS-.css" data-precedence="default"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" data-precedence="default"/>
   <title>La Ciencia del Jabón — Construye un Negocio Rentable de Jabones Artesanales</title>
@@ -17,9 +25,6 @@
   <meta name="description" content="No es más un libro de recetas. Es el sistema para fabricar, vender y escalar un negocio rentable de jabones artesanales. Acceso inmediato."/>
   <meta property="og:title" content="La Ciencia del Jabón — Negocio Rentable de Jabones"/>
   <meta property="og:description" content="Aprende a transformar tus jabones en un negocio rentable, sostenible y listo para escalar."/>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
 
   <!-- Facebook Pixel Code -->
   <script>
@@ -174,7 +179,11 @@
         
         <div class="relative">
           <div class="absolute -inset-4 rounded-[2rem] bg-[image:var(--gradient-primary)] opacity-30 blur-2xl" aria-hidden="true"></div>
-          <img src="./assets/hero-mockup-BVzVoaCy.jpg" alt="La Ciencia del Jabón" width="1280" height="1280" class="relative rounded-[2rem] object-cover shadow-[var(--shadow-glow)]"/>
+          <picture>
+            <source media="(max-width: 640px)" srcset="./assets/hero-mockup-640.webp" type="image/webp"/>
+            <source media="(min-width: 641px)" srcset="./assets/hero-mockup-1000.webp" type="image/webp"/>
+            <img src="./assets/hero-mockup-BVzVoaCy.jpg" alt="La Ciencia del Jabón" width="1280" height="1280" class="relative rounded-[2rem] object-cover shadow-[var(--shadow-glow)]" fetchpriority="high"/>
+          </picture>
           <div class="relative mt-6 flex justify-center">
             <span class="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-white/80 px-4 py-2 text-center text-xs font-medium text-foreground/80 shadow-[var(--shadow-soft)] backdrop-blur">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-3.5 w-3.5 text-primary" aria-hidden="true">
@@ -736,7 +745,10 @@
         <div class="mt-12 rounded-[2.5rem] border border-amber-500/30 bg-card p-6 md:p-10 shadow-[var(--shadow-glow)] text-left flex flex-col md:flex-row items-center gap-8 max-w-5xl mx-auto">
           <!-- Mockup Visual -->
           <div class="w-full md:w-1/2 shrink-0 relative overflow-hidden rounded-2xl border border-amber-500/20 shadow-[var(--shadow-soft)]">
-            <img src="./assets/plantilla-costos-mockup.png" alt="Plantilla Inteligente de Costos y Precificación" class="w-full h-auto object-cover rounded-2xl hover:scale-[1.03] transition-transform duration-500" />
+            <picture>
+              <source srcset="./assets/plantilla-costos-mockup.webp" type="image/webp" />
+              <img src="./assets/plantilla-costos-mockup.png" alt="Plantilla Inteligente de Costos y Precificación" class="w-full h-auto object-cover rounded-2xl hover:scale-[1.03] transition-transform duration-500" loading="lazy" />
+            </picture>
             <div class="absolute inset-0 bg-gradient-to-t from-background/30 to-transparent pointer-events-none"></div>
           </div>
           <!-- Contenido del Bono -->
