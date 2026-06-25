@@ -1359,6 +1359,15 @@
       // Leer preferencia de idioma guardada o por defecto es
       const savedLang = localStorage.getItem('soap_master_landing_lang') || 'es';
       setLanguage(savedLang);
+
+      // --- SEGUIMIENTO DE CLICS EN BOTONES DE COMPRA (InitiateCheckout) ---
+      document.querySelectorAll('a[href*="hotmart.com"]').forEach(button => {
+        button.addEventListener('click', () => {
+          if (typeof fbq !== 'undefined') {
+            fbq('track', 'InitiateCheckout');
+          }
+        });
+      });
     });
   </script>
 </body>
