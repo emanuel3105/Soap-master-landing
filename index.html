@@ -67,7 +67,7 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="relative overflow-hidden">
+    <section id="hero" class="relative overflow-hidden">
       <div class="absolute inset-0 bg-[image:var(--gradient-hero)] opacity-90" aria-hidden="true"></div>
       <div class="absolute -top-32 -left-32 h-96 w-96 rounded-full bg-primary/30 blur-3xl" aria-hidden="true"></div>
       <div class="absolute -bottom-32 -right-20 h-[28rem] w-[28rem] rounded-full bg-accent/40 blur-3xl" aria-hidden="true"></div>
@@ -191,7 +191,7 @@
     </section>
 
     <!-- Se identifica Section -->
-    <section class="bg-secondary/40 py-20 md:py-28">
+    <section id="identifica" class="bg-secondary/40 py-20 md:py-28">
       <div class="mx-auto max-w-5xl px-6 text-center">
         <span class="text-sm font-bold uppercase tracking-[0.2em] text-primary">¿Te identificas?</span>
         <h2 class="mt-4 font-[family-name:var(--font-display)] text-4xl font-bold md:text-5xl">
@@ -286,7 +286,7 @@
     </section>
 
     <!-- La Verdad Section -->
-    <section class="py-20 md:py-28">
+    <section id="verdad" class="py-20 md:py-28">
       <div class="mx-auto max-w-4xl px-6 text-center">
         <span class="text-sm font-bold uppercase tracking-[0.2em] text-primary">La verdad incómoda</span>
         <h2 class="mt-4 font-[family-name:var(--font-display)] text-4xl font-bold md:text-5xl">
@@ -302,7 +302,7 @@
     </section>
 
     <!-- Transformación Section -->
-    <section class="bg-secondary/40 py-20 md:py-28">
+    <section id="transformacion" class="bg-secondary/40 py-20 md:py-28">
       <div class="mx-auto max-w-6xl px-6">
         <div class="text-center">
           <span class="text-sm font-bold uppercase tracking-[0.2em] text-primary">Tu transformación</span>
@@ -395,7 +395,7 @@
     </section>
 
     <!-- SECCIÓN COMPARATIVA: ERRORES VS SOLUCIÓN -->
-    <section class="py-20 md:py-28 bg-background">
+    <section id="comparativa" class="py-20 md:py-28 bg-background">
       <div class="mx-auto max-w-6xl px-6">
         <div class="text-center">
           <span class="text-sm font-bold uppercase tracking-[0.2em] text-primary">Errores comunes vs. Solución</span>
@@ -470,7 +470,7 @@
     </section>
 
     <!-- Lo que vas a conquistar Section -->
-    <section class="py-20 md:py-28 bg-secondary/20">
+    <section id="conquistas" class="py-20 md:py-28 bg-secondary/20">
       <div class="mx-auto max-w-6xl px-6">
         <div class="text-center">
           <span class="text-sm font-bold uppercase tracking-[0.2em] text-primary">Lo que vas a conquistar</span>
@@ -661,7 +661,7 @@
     </section>
 
     <!-- Por que existe Section -->
-    <section class="relative overflow-hidden bg-[image:var(--gradient-hero)] py-20 md:py-28">
+    <section id="por-que-existe" class="relative overflow-hidden bg-[image:var(--gradient-hero)] py-20 md:py-28">
       <div class="mx-auto max-w-4xl px-6 text-center">
         <span class="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-1.5 text-sm font-semibold text-primary shadow-[var(--shadow-card)] backdrop-blur">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-4 w-4" aria-hidden="true">
@@ -687,7 +687,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-20 md:py-28 bg-background">
+    <section id="faq" class="py-20 md:py-28 bg-background">
       <div class="mx-auto max-w-5xl px-6">
         <div class="text-center">
           <span class="text-sm font-bold uppercase tracking-[0.2em] text-primary">Resolvemos tus dudas</span>
@@ -718,6 +718,38 @@
           <div class="rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-card)]">
             <p class="font-bold text-primary">¿En cuánto tiempo veré resultados?</p>
             <p class="mt-2 text-muted-foreground">Desde el primer módulo aplicarás la precificación correcta y dejarás de vender por debajo del costo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE BONOS -->
+    <section id="bonos" class="py-20 md:py-28 bg-secondary/20">
+      <div class="mx-auto max-w-4xl px-6 text-center">
+        <span class="text-sm font-bold uppercase tracking-[0.2em] text-primary">Regalo de Acción Rápida</span>
+        <h2 class="mt-4 font-[family-name:var(--font-display)] text-4xl font-bold md:text-5xl">
+          Llévate este Bono Exclusivo <br class="hidden sm:inline"/><span class="bg-[image:var(--gradient-primary)] bg-clip-text text-transparent">Totalmente Gratis</span>
+        </h2>
+        <p class="mt-4 text-lg text-muted-foreground">Si adquieres la guía hoy, desbloqueas de forma automática nuestro recurso financiero premium.</p>
+
+        <!-- Tarjeta del Bono -->
+        <div class="mt-12 rounded-[2.5rem] border border-amber-500/30 bg-card p-6 md:p-10 shadow-[var(--shadow-glow)] text-left flex flex-col md:flex-row items-center gap-8 max-w-5xl mx-auto">
+          <!-- Mockup Visual -->
+          <div class="w-full md:w-1/2 shrink-0 relative overflow-hidden rounded-2xl border border-amber-500/20 shadow-[var(--shadow-soft)]">
+            <img src="./assets/plantilla-costos-mockup.png" alt="Plantilla Inteligente de Costos y Precificación" class="w-full h-auto object-cover rounded-2xl hover:scale-[1.03] transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-background/30 to-transparent pointer-events-none"></div>
+          </div>
+          <!-- Contenido del Bono -->
+          <div class="flex-1">
+            <span class="val-tag-bono inline-flex items-center gap-1.5 rounded-full bg-amber-500/15 px-3 py-1 text-xs font-bold uppercase tracking-wider text-amber-500 mb-3">Bono #1 · Incluido Gratis</span>
+            <h3 class="font-[family-name:var(--font-display)] text-2xl font-black text-foreground font-display-bono">Plantilla Inteligente de Costos y Precificación</h3>
+            <p class="mt-3 text-muted-foreground leading-relaxed text-desc-bono">
+              Una herramienta automatizada diseñada para artesanas. Solo ingresa el costo de tus materias primas y aceites, y la plantilla calculará automáticamente el costo exacto por barra de jabón y te sugerirá el precio de venta ideal para maximizar tus ganancias.
+            </p>
+            <div class="mt-4 flex items-center gap-3">
+              <span class="text-sm font-semibold text-muted-foreground line-through val-regular-bono">Valor regular: $19 USD</span>
+              <span class="text-sm font-bold text-success val-gratis-bono">¡Gratis Hoy!</span>
+            </div>
           </div>
         </div>
       </div>
@@ -838,7 +870,7 @@
     </section>
 
     <!-- TARJETA DE GARANTÍA DORADA PREMIUM -->
-    <section class="bg-secondary/40 px-6 py-16">
+    <section id="garantia" class="bg-secondary/40 px-6 py-16">
       <div class="mx-auto max-w-4xl rounded-[2.5rem] p-[3px] bg-gradient-to-r from-amber-200 via-yellow-400 to-amber-500 shadow-[0_0_50px_0_rgba(245,158,11,0.25)]">
         <div class="rounded-[2.4rem] bg-card p-8 md:p-12 flex flex-col items-center gap-6 md:flex-row md:text-left text-center">
           <div class="flex h-24 w-24 shrink-0 items-center justify-center rounded-full bg-amber-500/10 text-amber-500 border-2 border-amber-500/30">
@@ -1018,6 +1050,14 @@
           { q: "¿Y si no tengo experiencia en negocios?", a: "Fue diseñado para artesanas, no para empresarios. Paso a paso y sin tecnicismos." },
           { q: "¿En cuánto tiempo veré resultados?", a: "Desde el primer módulo aplicarás la precificación correcta y dejarás de vender por debajo del costo." }
         ],
+        bonusEyebrow: "Regalo de Acción Rápida",
+        bonusTitle: "Llévate este Bono Exclusivo <br class='hidden sm:inline'/><span class='bg-[image:var(--gradient-primary)] bg-clip-text text-transparent'>Totalmente Gratis</span>",
+        bonusSub: "Si adquieres la guía hoy, desbloqueas de forma automática nuestro recurso financiero premium.",
+        bonusTag: "Bono #1 · Incluido Gratis",
+        bonusName: "Plantilla Inteligente de Costos y Precificación",
+        bonusDesc: "Una herramienta automatizada diseñada para artesanas. Solo ingresa el costo de tus materias primas y aceites, y la plantilla calculará automáticamente el costo exacto por barra de jabón y te sugerirá el precio de venta ideal para maximizar tus ganancias.",
+        bonusValue: "Valor regular: $19 USD",
+        bonusFree: "¡Gratis Hoy!",
         offerBadge: "Oferta de lanzamiento · Tiempo limitado",
         offerSub: "El sistema completo para fabricar, vender y escalar.",
         offerSave: "Ahorras US$18 hoy · Pago único",
@@ -1041,7 +1081,7 @@
         navCta: "Quero acesso",
         heroSparkle: "Sistema de negócio · Não é um livro de receitas",
         heroTitle: "Aprender a fazer sabonetes é fácil. <span class='bg-[image:var(--gradient-primary)] bg-clip-text text-transparent'>Construir um negócio rentável</span> é o difícil.",
-        heroSub: "A maioria dos cursos ensina a fabricar. <strong class='text-foreground'>A Ciência do Sabão</strong> te ensina a transformá-los em um negócio rentável, sustentável e pronto para crescer.",
+        heroSub: "A maioria dos cursos ensina a fabricar. <strong class='text-foreground'>A Ciência do Sabão</strong> te ensina a transformá-los em um negocio rentável, sustentável e pronto para crescer.",
         heroCta: "Quero escalar meu negócio",
         heroSecondaryCta: "Ver tudo o que inclui",
         heroChecks: ["Fabricar como profissional", "Calcular custos reais", "Construir sua marca", "Escalar sua produção"],
@@ -1065,7 +1105,7 @@
         identifyClose: "Você não está sozinha. <span class='text-destructive'>O problema não é o seu sabonete.</span>",
         truthEyebrow: "A verdade incômoda",
         truthTitle: "O problema <span class='text-primary'>não é o seu sabonete</span>",
-        truthP1: "A maioria dos empreendedores acredita que precisa de outra receita, outro aroma, outro molde. A realidade é que o produto não é o problema.",
+        truthP1: "A maioria dos empreendedores acredita que precisa de outra receita, outro aroma, outro molde. A realidade é que o produto não es o problema.",
         truthP2: "O problema é que <span class='text-primary'>ninguém te ensinou a transformar esse produto em uma empresa rentável</span>.",
         transEyebrow: "Sua transformação",
         transTitle: "De artesã a <span class='bg-[image:var(--gradient-primary)] bg-clip-text text-transparent'>dona de negócio</span>",
@@ -1113,7 +1153,7 @@
         stagesSub: "Não são receitas. É o caminho completo para construir um negócio rentável.",
         stages: [
           { t: "Etapa 1 &bull; Fabricação profissional", d: "Fundamentos para produzir sabonetes consistentes, seguros e vendíveis." },
-          { t: "Etapa 2 &bull; Custos e rentabilidade", d: "Calcule matéria-prima, embalagem, mão de obra e margem real por unidade." },
+          { t: "Etapa 2 &bull; Costos e rentabilidade", d: "Calcule matéria-prima, embalagem, mão de obra e margem real por unidade." },
           { t: "Etapa 3 &bull; Estruturação do negócio", d: "Organize sua produção, finanças e operação como uma empresa." },
           { t: "Etapa 4 &bull; Posicionamento e marca", d: "Crie uma marca diferenciada que as pessoas lembrem e prefiram." },
           { t: "Etapa 5 &bull; Vendas e crescimento", d: "Conquiste novos clientes de forma constante e pare de depender do boca a boca." },
@@ -1136,6 +1176,14 @@
           { q: "E se eu não tiver experiência em negócios?", a: "Foi pensado para artesãs, não para empresários. Passo a passo, sem tecnicismos." },
           { q: "Em quanto tempo verei resultados?", a: "Desde o primeiro módulo você aplica precificação correta e para de vender abaixo do custo." }
         ],
+        bonusEyebrow: "Presente de Ação Rápida",
+        bonusTitle: "Leve este Bônus Exclusivo <br class='hidden sm:inline'/><span class='bg-[image:var(--gradient-primary)] bg-clip-text text-transparent'>Totalmente Grátis</span>",
+        bonusSub: "Se adquirir o guia hoje, desbloqueia de forma automática nosso recurso financeiro premium.",
+        bonusTag: "Bônus #1 · Incluído Grátis",
+        bonusName: "Planilha Inteligente de Custos e Precificação",
+        bonusDesc: "Uma ferramenta automatizada desenhada para artesãs. Basta inserir o custo de suas matérias-primas e óleos, e a planilha calculará automaticamente o custo exato por barra de sabonete e sugerirá o preço de venda ideal para maximizar seus lucros.",
+        bonusValue: "Valor regular: $19 USD",
+        bonusFree: "Grátis Hoje!",
         offerBadge: "Oferta de lançamento · Tempo limitado",
         offerSub: "O sistema completo para fabricar, vender e escalar.",
         offerSave: "Você economiza US$18 hoje · Pagamento único",
@@ -1176,10 +1224,10 @@
       document.querySelector('h1 + p').innerHTML = dict.heroSub;
       
       // PEE section
-      document.querySelector('.mt-8 span.bg-primary\\/10').textContent = dict.peeBadge;
-      document.querySelector('.mt-8 h3').innerHTML = dict.peeTitle;
-      document.querySelector('.mt-8 h3 + p').textContent = dict.peeText;
-      const peeGrid = document.querySelectorAll('.mt-4.grid div');
+      document.querySelector('#hero .mt-8 span.bg-primary\\/10').textContent = dict.peeBadge;
+      document.querySelector('#hero .mt-8 h3').innerHTML = dict.peeTitle;
+      document.querySelector('#hero .mt-8 h3 + p').textContent = dict.peeText;
+      const peeGrid = document.querySelectorAll('#hero .mt-4.grid div');
       if (peeGrid.length === 3) {
         peeGrid[0].innerHTML = '<span class="block text-lg">🧼</span>' + dict.peeCards[0];
         peeGrid[1].innerHTML = '<span class="block text-lg">📏</span>' + dict.peeCards[1];
@@ -1189,37 +1237,37 @@
       document.querySelector('a[href*="hotmart"]').innerHTML = dict.heroCta + ' <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-5 w-5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>';
       document.querySelector('a[href="#incluye"]').textContent = dict.heroSecondaryCta;
       
-      const checks = document.querySelectorAll('ul.mt-8.grid li');
+      const checks = document.querySelectorAll('#hero ul.mt-8.grid li');
       checks.forEach((li, idx) => {
         if (dict.heroChecks[idx]) {
           li.innerHTML = '<span class="flex h-6 w-6 items-center justify-center rounded-full bg-success/20 text-success"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-4 w-4"><path d="M20 6 9 17l-5-5"></path></svg></span>' + dict.heroChecks[idx];
         }
       });
-      document.querySelector('.relative.mt-6 span').innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-3.5 w-3.5 text-primary"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>' + dict.heroBadge;
+      document.querySelector('#hero .relative.mt-6 span').innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-3.5 w-3.5 text-primary"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>' + dict.heroBadge;
 
       // Identify
-      document.querySelector('span.tracking-\\[0\\.2em\\]').textContent = dict.identifyEyebrow;
-      document.querySelector('h2.md\\:text-5xl').innerHTML = dict.identifyTitle;
-      const idenCards = document.querySelectorAll('.mt-12.grid.gap-4 p');
+      document.querySelector('#identifica span.tracking-\\[0\\.2em\\]').textContent = dict.identifyEyebrow;
+      document.querySelector('#identifica h2').innerHTML = dict.identifyTitle;
+      const idenCards = document.querySelectorAll('#identifica .mt-12.grid.gap-4 p');
       idenCards.forEach((p, idx) => {
         if (dict.identifyItems[idx]) p.textContent = dict.identifyItems[idx];
       });
-      document.querySelector('.mt-10.text-xl').innerHTML = dict.identifyClose;
+      document.querySelector('#identifica .mt-10.text-xl').innerHTML = dict.identifyClose;
 
       // Truth
-      const truthSec = document.querySelectorAll('section')[2];
+      const truthSec = document.getElementById('verdad');
       truthSec.querySelector('span').textContent = dict.truthEyebrow;
       truthSec.querySelector('h2').innerHTML = dict.truthTitle;
       truthSec.querySelector('p.mt-6').textContent = dict.truthP1;
       truthSec.querySelector('p.mt-4').innerHTML = dict.truthP2;
 
       // Trans
-      const transSec = document.querySelectorAll('section')[3];
+      const transSec = document.getElementById('transformacion');
       transSec.querySelector('span').textContent = dict.transEyebrow;
       transSec.querySelector('h2').innerHTML = dict.transTitle;
       
       const transBefore = transSec.querySelector('.border-destructive\\/30');
-      transBefore.querySelector('p').textContent = "Antes";
+      transBefore.querySelector('p').textContent = lang === 'es' ? "Antes" : "Antes";
       transBefore.querySelector('h3').textContent = dict.transBeforeTitle;
       transBefore.querySelectorAll('li').forEach((li, idx) => {
         if (dict.transBeforeItems[idx]) {
@@ -1228,7 +1276,7 @@
       });
 
       const transAfter = transSec.querySelector('.border-success\\/40');
-      transAfter.querySelector('p').textContent = "Depois";
+      transAfter.querySelector('p').textContent = lang === 'es' ? "Después" : "Depois";
       transAfter.querySelector('h3').textContent = dict.transAfterTitle;
       transAfter.querySelectorAll('li').forEach((li, idx) => {
         if (dict.transAfterItems[idx]) {
@@ -1237,7 +1285,7 @@
       });
 
       // Comparison (Errors vs Sol)
-      const compSec = document.querySelectorAll('section')[4];
+      const compSec = document.getElementById('comparativa');
       compSec.querySelector('span').textContent = dict.compEyebrow;
       compSec.querySelector('h2').innerHTML = dict.compTitle;
       compSec.querySelector('p').textContent = dict.compSub;
@@ -1263,14 +1311,14 @@
       });
 
       // Conq
-      const conqSec = document.querySelectorAll('section')[5];
+      const conqSec = document.getElementById('conquistas');
       conqSec.querySelector('h2').innerHTML = dict.conqTitle;
       conqSec.querySelectorAll('.rounded-2xl.border-border p').forEach((p, idx) => {
         if (dict.conqItems[idx]) p.textContent = dict.conqItems[idx];
       });
 
       // Stages
-      const stagesSec = document.querySelector('#incluye');
+      const stagesSec = document.getElementById('incluye');
       stagesSec.querySelector('span').textContent = dict.stagesSub;
       stagesSec.querySelector('h2').innerHTML = dict.stagesTitle;
       stagesSec.querySelector('p').textContent = dict.stagesSub;
@@ -1283,7 +1331,7 @@
       });
 
       // Why
-      const whySec = document.querySelectorAll('section')[7];
+      const whySec = document.getElementById('por-que-existe');
       whySec.querySelector('span').innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-4 w-4"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg> ' + dict.whyBadge;
       whySec.querySelector('h2').innerHTML = dict.whyTitle;
       whySec.querySelector('p').textContent = dict.whyP;
@@ -1292,7 +1340,7 @@
       whySec.querySelector('p.font-bold').innerHTML = dict.whyClose;
 
       // FAQ
-      const faqSec = document.querySelectorAll('section')[8];
+      const faqSec = document.getElementById('faq');
       faqSec.querySelector('span').textContent = dict.faqTitle;
       faqSec.querySelector('h2').textContent = dict.faqTitle;
       faqSec.querySelectorAll('.grid div').forEach((div, idx) => {
@@ -1303,8 +1351,19 @@
         }
       });
 
+      // Bonos
+      const bonusSec = document.getElementById('bonos');
+      bonusSec.querySelector('span').textContent = dict.bonusEyebrow;
+      bonusSec.querySelector('h2').innerHTML = dict.bonusTitle;
+      bonusSec.querySelector('p').textContent = dict.bonusSub;
+      bonusSec.querySelector('.val-tag-bono').textContent = dict.bonusTag;
+      bonusSec.querySelector('.font-display-bono').textContent = dict.bonusName;
+      bonusSec.querySelector('.text-desc-bono').textContent = dict.bonusDesc;
+      bonusSec.querySelector('.val-regular-bono').textContent = dict.bonusValue;
+      bonusSec.querySelector('.val-gratis-bono').textContent = dict.bonusFree;
+
       // Offer
-      const offerSec = document.querySelector('#oferta');
+      const offerSec = document.getElementById('oferta');
       offerSec.querySelector('span.text-accent-foreground').innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap h-3.5 w-3.5"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg> ' + dict.offerBadge;
       offerSec.querySelector('h2').textContent = dict.brand;
       offerSec.querySelector('h2 + p').textContent = dict.offerSub;
@@ -1324,7 +1383,7 @@
       offerSec.querySelectorAll('.flex.flex-wrap span')[1].innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap h-3.5 w-3.5"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg> ' + dict.payInstant;
 
       // Guarantee
-      const guarSec = document.querySelectorAll('section')[10];
+      const guarSec = document.getElementById('garantia');
       guarSec.querySelector('span.text-xs').textContent = lang === 'es' ? "Garantía Incondicional de Satisfacción" : "Garantia Incondicional de Satisfação";
       guarSec.querySelector('h3').textContent = dict.guarTitle;
       guarSec.querySelector('p').textContent = dict.guarP;
