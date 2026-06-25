@@ -1,0 +1,10 @@
+{
+  "name": "soap-master-landing",
+  "version": "1.0.0",
+  "description": "Replicación de la landing page de A Ciência do Sabão con soporte para Facebook Pixel",
+  "main": "index.html",
+  "scripts": {
+    "dev": "py -m http.server 3000"
+  },
+  "dependencies": {}
+}
